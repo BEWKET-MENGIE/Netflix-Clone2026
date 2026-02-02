@@ -4,20 +4,19 @@ display: flex;
 justify-content: center;
 top: 0;
 align-items: center;
-background-color: rbg(20,20,20);
-background-color: transparent;
+background-color: rgb(20,20,20);
 height: 10vh;
-columns: white;
+color: white;
 transition: all 0.5s;
 transition-timing-function: ease-in;
-z-index: 1;
+/* z-index: 1; */
 /* background-color: red; */
 
 
 
 }
 .nav_black {
-    background-color: (20,20,20);
+    background-color: rgb(20,20,20);
 }
 .header_container{
     width: 90%;
