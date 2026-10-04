@@ -1,0 +1,100 @@
+/* Outer Header Shell */
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Starts clean/transparent */
+    height: 70px;
+    color: white;
+    transition: background-color 0.4s ease-in;
+    z-index: 1000;
+    padding: 0 4% 0 4%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Background applied dynamically on scroll or via state */
+.nav_black {
+    background-color: #141414 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Internal Layout Frame */
+.header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Side Navigation Links */
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+} 
+
+.header_left ul li {
+    margin-right: 20px;
+    font-size: 1rem;       /* Increased font size */
+    font-weight: 500;      /* Slightly bolder font for clarity */
+} 
+
+/* Add a clear gap between the logo and the very first text link (Home) */
+.header_left ul li:nth-child(2) {
+    margin-left: 25px;     /* Creates the requested gap */
+}
+
+/* Logo image styling inside the left list */
+.header_left ul li img {
+    width: 95px;
+    object-fit: contain;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.header_left ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.header_left ul li a:hover {
+    color: #b3b3b3; /* Netflix grey hover effect */
+}
+
+/* Right Side Icons & Utilities */
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_right ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header_right ul li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.header_right ul li:hover {
+    transform: scale(1.08); /* Subtle zoom effect on icons */
+}
